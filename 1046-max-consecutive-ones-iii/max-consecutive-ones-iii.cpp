@@ -10,8 +10,9 @@ public:
                 zeroCount++;
         }
         if(zeroCount>k){
-            if(nums[left]==0)
+            if(nums[left]==0){
             zeroCount--;
+        }
             left++;
         }
         len = max(len,right-left+1);
